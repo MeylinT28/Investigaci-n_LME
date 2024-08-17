@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investigación sobre JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Investigación sobre JavaScript</h1>
+        <nav>
+            <ul>
+                <li><a href="#que-es">¿Qué es JavaScript?</a></li>
+                <li><a href="#como-utilizar">Cómo utilizar JavaScript</a></li>
+                <li><a href="#variables">Manejo de Variables</a></li>
+                <li><a href="#imc">Calculadora de IMC</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="que-es">
+            <h2>¿Qué es JavaScript?</h2>
+            <p>JavaScript es un lenguaje de programación interpretado que permite implementar funciones complejas en páginas web, tales como mostrar contenido dinámico, animaciones y procesamiento de datos en tiempo real. Es uno de los tres pilares del desarrollo web, junto con HTML y CSS.</p>
+            <img src="C:\Users\usuario\OneDrive\Escritorio\Investigación_LME\imagen de javaScript.png" alt="Logo de JavaScript" class="responsive-img">
+        </section>
+
+        <section id="como-utilizar">
+            <h2>Cómo utilizar JavaScript en una página web</h2>
+            <p>Para incluir JavaScript en una página web, puedes usar la etiqueta <code>&lt;script&gt;</code>. Este código puede colocarse en la cabecera (<code>&lt;head&gt;</code>) o antes del cierre del cuerpo (<code>&lt;/body&gt;</code>) del documento HTML.</p>
+            <pre><code>&lt;script&gt;
+alert('Hola, mundo!');
+&lt;/script&gt;</code></pre>
+        </section>
+
+        <section id="variables">
+            <h2>Manejo de Variables en JavaScript</h2>
+            <p>JavaScript permite declarar variables utilizando las palabras clave <code>var</code>, <code>let</code> o <code>const</code>. Las variables son espacios de almacenamiento que pueden contener diferentes tipos de datos, como números, cadenas de texto, objetos, y más.</p>
+            <p><strong>Ejemplo:</strong></p>
+            <pre><code>let nombre = 'Juan';
+let edad = 25;
+const PI = 3.1416;</code></pre>
+        </section>
+
+        <section id="imc">
+            <h2>Calculadora de IMC</h2>
+            <p>Ingresa tu peso y altura para calcular tu Índice de Masa Corporal (IMC), que es una medida que se utiliza para determinar si una persona tiene un peso saludable en relación con su altura.</p>
+            <form id="imcForm">
+                <div class="form-group">
+                    <label for="peso">Peso (kg):</label>
+                    <input type="text" id="peso" name="peso" required>
+                </div>
+                <div class="form-group">
+                    <label for="altura">Altura (cm):</label>
+                    <input type="text" id="altura" name="altura" required>
+                </div>
+                <button type="button" onclick="calcularIMC()">Calcular IMC</button>
+            </form>
+            <p id="resultado"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Investigación sobre JavaScript. Estudiante Meylin Fuentes UDB</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
